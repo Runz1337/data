@@ -13,6 +13,8 @@ def search_pokemon(poke_name):
               print(type(json_data))
               id=json_data["id"]
               json_data["url"]=f"https://cdn.poketwo.net/images/{id}.png"
+              json_data["shiny"]=f"https://cdn.poketwo.net/shiny/{id}.png"
+            
               return json_data
 
     return None  # Return None if the Pokémon name is not found
